@@ -8,6 +8,8 @@ A simple, easy to configure Twitch live notification bot for Discord written in 
 * A more feature-rich embed, showing the title, category, game art, and a link to the stream.
 * Custom message with embed.
 
+## Preview
+![Live notification](https://raw.githubusercontent.com/Woovie/imgdump/master/livebot.png)
 
 ## Requirements
 * Discord Application, converted to a bot
