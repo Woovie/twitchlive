@@ -4,7 +4,10 @@ A simple, easy to configure Twitch live notification bot for Discord written in 
 ##  Features
 * Simple, lightweight
 * Easy configuration
-* Much faster to notify than Mee6
+* Much faster to notify than Mee6 (60 seconds or less!)
+* A more feature-rich embed, showing the title, category, game art, and a link to the stream.
+* Custom message with embed.
+
 
 ## Requirements
 * Discord Application, converted to a bot
