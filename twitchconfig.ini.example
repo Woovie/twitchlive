@@ -1,0 +1,6 @@
+[twitch]
+clientid=
+streamer=
+apiurl=https://api.twitch.tv/helix/streams?user_login=
+ticktype=minutes
+tickrate=1
