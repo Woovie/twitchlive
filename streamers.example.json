@@ -1,0 +1,10 @@
+
+[
+    {
+        "streamer": "super_cool_streamer",
+        "speed": 5,
+        "announce": true,
+        "message": "hey I'm live @here",
+        "announce_channel": 105420838487990272
+    }
+]
