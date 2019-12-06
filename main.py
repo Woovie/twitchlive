@@ -1,4 +1,4 @@
-import datetime, discord, json, asyncio, twitch, configparser
+import datetime, discord, json, twitch, configparser
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 config = configparser.ConfigParser()
