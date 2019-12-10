@@ -41,8 +41,14 @@ class Streamer():
                 self.announced = False
                 return 'not live'
         elif self.check_ticks < 6 and self.check_ticks > 0:
-            self.check_ticks += 1
-            return 'ticked'
+            if not live_data and not self.live:
+                self.check_ticks = 0
+                self.live = False
+                self.announced = False
+                return 'not live, resetting ticks'
+            else:
+                self.check_ticks += 1
+                return 'ticked'
     async def get_streamer_data(self):
         async with aiohttp.ClientSession() as session:
             async with session.get(f"{streamer_api}{self.streamer}", headers=headers) as r:
