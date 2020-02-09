@@ -1,8 +1,9 @@
-import aiohttp, configparser, discord
+import aiohttp, configparser, discord, os
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
+config_path = os.getenv('CONFIG_PATH', 'config.ini')
 config = configparser.ConfigParser()
-config.read('config.ini')
+config.read(config_path)
 
 streamer_api = config['twitch']['streamer_api']
 game_api     = config['twitch']['game_api']

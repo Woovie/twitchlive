@@ -1,0 +1,12 @@
+version: "3"
+services:
+  discordbot:
+    build: .
+    image: twitchlive:latest
+    volumes:
+      - "config:/config"
+    environment:
+      - "CONFIG_PATH=/config/config.ini"
+  container_name: "twitchlive"
+volumes:
+  config:
