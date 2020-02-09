@@ -1,0 +1,14 @@
+version: "3"
+services:
+  discordbot:
+    build: .
+    image: twitchlive:latest
+    volumes:
+      - "config:/config"
+    environment:
+      - "CONFIG_PATH=/config/config.ini"
+      - "STREAMER_CONFIG_PATH=/config/streamers.json"
+    container_name: "twitchlive"
+    user: "twitchlive"
+volumes:
+  config:
