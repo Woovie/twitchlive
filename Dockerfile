@@ -4,10 +4,12 @@ WORKDIR /app
 
 COPY . .
 
-RUN groupadd -g 12345 twitchlive 
+RUN groupadd -g 12345 twitchlive
 
-RUN adduser twitchlive -g 12345 -u 12345 -b /app
+RUN adduser --system --uid 12345 --gid 12345 twitchlive
 
 RUN chown -R twitchlive:twitchlive /app
 
-CMD ["python", "main.py"]
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["python", "-u", "main.py"]

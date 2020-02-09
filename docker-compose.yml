@@ -7,6 +7,8 @@ services:
       - "config:/config"
     environment:
       - "CONFIG_PATH=/config/config.ini"
-  container_name: "twitchlive"
+      - "STREAMER_CONFIG_PATH=/config/streamers.json"
+    container_name: "twitchlive"
+    user: "twitchlive"
 volumes:
   config:
