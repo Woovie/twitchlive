@@ -1,0 +1,13 @@
+[Unit]
+Description=Discord Twitch Live bot
+After=multi-user.target
+
+[Server]
+Type=single
+ExecStart=/home/pythonbots/venv/bin/python3 /home/pythonbots/twitchlive/main.py
+WorkingDirectory=/home/pythonbots/twitchlive/
+User=pythonbots
+Group=pythonbots
+
+[Install]
+WantedBy=multi-user.target
