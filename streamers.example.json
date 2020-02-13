@@ -3,6 +3,7 @@
     {
         "twitch_name": "super_cool_streamer",
         "frequency": 5,
+        "delay": 5,
         "active": true,
         "message": "hey I'm live @here",
         "announce_channel": 105420838487990272
