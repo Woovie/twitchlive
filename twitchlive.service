@@ -2,8 +2,8 @@
 Description=Discord Twitch Live bot
 After=multi-user.target
 
-[Server]
-Type=single
+[Service]
+Type=simple
 ExecStart=/home/pythonbots/venv/bin/python3 /home/pythonbots/twitchlive/main.py
 WorkingDirectory=/home/pythonbots/twitchlive/
 User=pythonbots
