@@ -16,7 +16,6 @@ A simple, easy to configure Twitch live notification bot for Discord written in 
   * https://discordapp.com/developers/applications/
 * Twitch Application
   * https://dev.twitch.tv/console/apps/create
-* A server to host the script on with Python 3.6+
 
 ## Setup
 ##TODO##
