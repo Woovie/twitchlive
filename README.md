@@ -1,5 +1,5 @@
 # twitchlive
-A simple, easy to configure Twitch live notification bot for Discord written in Python 3.6+ (f-strings)
+A simple, easy to configure Twitch live notification bot for Discord written in Python. Requires Python 3.8+
 
 ##  Features
 * Simple, lightweight
